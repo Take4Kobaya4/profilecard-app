@@ -1,4 +1,4 @@
-function ProfileCard({title, handle, image}){
+function ProfileCard({title, handle, image, description}){
   // returnする前に定数として定義
   
   return (
@@ -13,9 +13,10 @@ function ProfileCard({title, handle, image}){
         <div className="media-content">
 
         </div>
-        <p className="title is-4">Title is {title}</p>
-        <p className="subtitle is-6">Handle is {handle}</p>
+        <p className="title is-4">{title}</p>
+        <p className="subtitle is-6">{handle}</p>
       </div>
+      <div className="content">{description}</div>
     </div>
   );
 }
